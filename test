@@ -1,0 +1,17 @@
+const assert = require('chai').assert;
+
+describe('Comparisons', function() {
+  it('should compare two values using strict equality', function() {
+    assert.strictEqual(42 === 42, true);
+    assert.strictEqual(42 === "42", false);
+    // Add more test cases here
+  });
+
+  it('should compare two values using strict inequality', function() {
+    assert.strictEqual(9000 !== 9001, true);
+    assert.strictEqual(9001 !== '9001', true);
+    // Add more test cases here
+  });
+
+  // Add more describe blocks for other types of comparisons (loose equality, relational operators) if needed
+});
